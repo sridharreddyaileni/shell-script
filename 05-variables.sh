@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERNAME=$1
+USERNAME=sridhar5
 
 echo "Please enter your username"
 
