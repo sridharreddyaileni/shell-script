@@ -9,3 +9,5 @@ echo "Second value: ${FRUITS[2]}"
 echo "Third value: ${FRUITS[1]}"
 
 echo "Fourth value: ${FRUITS[3]}"
+
+echo "All Fruits: ${FRUITS[@]}"
