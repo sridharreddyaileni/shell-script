@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Please enter your username"
+USERNAME=$1
 
-read USERNAME 
+echo "Please enter your username"
 
 echo "Username is: $USERNAME"
 
