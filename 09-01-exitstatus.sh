@@ -1,7 +1,18 @@
 #!/bin/bash
 
 ID=$(id -u)
+
 X=$(echo $?)
+
+VALIDATE(){
+if [ $X -ne 0 ]
+then
+    echo "ERROR:: Installation of git failed"
+    exit 1
+else
+    echo "Instllation git is success"
+fi 
+}
 
 if [ $ID -ne 0 ]
 then
@@ -13,11 +24,6 @@ fi
 
 yum install ngixyy -y
 
+VALIDATE
+
 #if [ $? ne 0 ]
-if [ $X -ne 0 ]
-then
-    echo "ERROR:: Installation of git failed"
-    exit 1
-else
-    echo "Instllation git is success"
-fi 
