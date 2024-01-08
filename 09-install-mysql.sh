@@ -24,7 +24,7 @@ yum install mysql -y
 
 VALIDATE
 
-yum install nginx 
+yum install nginxS -y
 
 VALIDATE
 
