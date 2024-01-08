@@ -3,9 +3,9 @@
 ID=$(id -u)
 
 VALIDATE(){
-    if [ $X=10]
+    if [ $? -ne 0 ]
     then 
-        echo "Installation is Failed"
+        echo "ERROR::Installation is Failed"
         exit 1
     else
         echo "Installation is Success"
@@ -20,13 +20,13 @@ else
     echo "You are root user"
 fi 
 
-#yum install mysql -y
-
-X=10
+yum install mysql -y
 
 VALIDATE
 
-#yum install nginx -y
+yum install git -y
+
+VALIDATE
 
 
 
