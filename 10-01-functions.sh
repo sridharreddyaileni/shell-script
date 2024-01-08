@@ -8,7 +8,7 @@ VALIDATE(){
         echo "ERROR:: $2....Installing is failed"
         exit 1
     else
-        echo "$2....Installing is success"
+        echo "$2....$3"
     fi
 }
 
@@ -22,8 +22,8 @@ fi
 
 yum install mysql -y
 
-VALIDATE $? "installing mysql"
+VALIDATE $? "installing mysql" "Installing  mysql is success"
 
 yum install git -y
 
-VALIDATE $? "installing git"
+VALIDATE $? "installing git" "Installing  git is success"
