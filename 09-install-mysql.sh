@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID=$(id -u)
+#ID=$(id -u)
 
 VALIDATE(){
     if [ $? ne 0 ]
@@ -12,13 +12,13 @@ VALIDATE(){
     fi
 }
 
-if [ $ID -ne 0 ]
-then
-    echo "ERROR:: Please run this scripts with root access"
-    #exit 1
-else   
-    echo "You are root user"
-fi 
+# if [ $ID -ne 0 ]
+# then
+#     echo "ERROR:: Please run this scripts with root access"
+#     #exit 1
+# else   
+#     echo "You are root user"
+# fi 
 
 yum install mysqql -y
 
