@@ -12,7 +12,7 @@ VALIDATE(){
         echo "ERROR:: $2....failed"
         exit 1
     else
-        echo -e "$2....\e[32m success"
+        echo -e "$2....\e[32m success \e[0m"
     fi
 }
 
