@@ -24,7 +24,7 @@ yum install gityy -y
 
 if [ $? -ne 0 ]
 then
-    echo "ERROR:: Installation of git failed"
+    echo "ERROR:: Installation of git is failed"
     exit 1
 else
     echo "Instllation git is success"
