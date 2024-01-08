@@ -11,13 +11,13 @@ else
     echo "You are root user"
 fi 
 
-yum install git -y
+yum install ngixyy -y
 
 #if [ $? ne 0 ]
 if [ $X ne 0 ]
 then
-    echo "ERROR:: Installation of mysql failed"
+    echo "ERROR:: Installation of git failed"
     exit 1
 else
-    echo "Instllation mysql is success"
+    echo "Instllation git is success"
 fi 
