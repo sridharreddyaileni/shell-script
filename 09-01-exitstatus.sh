@@ -20,7 +20,7 @@ else
     echo "Instllation mysql is success"
 fi 
 
-yum install gity -y
+yum install gityy -y
 
 if [ $? -ne 0 ]
 then
