@@ -18,7 +18,7 @@ VALIDATE(){
 
 if [ $ID -ne 0 ]  
 then
-    echo "ERROR:: Please run this script with root access"
+    echo "\e[31m ERROR:: Please run this script with root access"  #colour code given for red  colour
     exit 1
 else
     echo "you are root user"
