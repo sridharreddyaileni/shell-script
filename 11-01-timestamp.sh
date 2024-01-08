@@ -10,7 +10,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then
         echo -e "ERROR:: $2....\e[31m failed \e[0m"
-        exit 1
+        #exit 1
     else
         echo -e "$2....\e[32m success \e[0m" #colour code given for green and normal colour
     fi
