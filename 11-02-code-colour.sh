@@ -11,6 +11,6 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo -e "$G Hello $N"
 echo -e "$R I'M  ANGRY ON  YOU $N"
-echo -e "$Y just kidding $N"
+echo -e "$Y just kidding $N" &>> $LOGFILE
 
 
