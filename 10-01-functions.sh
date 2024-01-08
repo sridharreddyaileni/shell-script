@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+#ID=$(id -u) #given command in if condition directly
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -12,7 +12,7 @@ VALIDATE(){
     fi
 }
 
-if  [$(id -u) -ne 0 ]
+if  [$(id -u) -ne 0 ]  
 then
     echo "ERROR:: Please run this script with root access"
     exit 1
