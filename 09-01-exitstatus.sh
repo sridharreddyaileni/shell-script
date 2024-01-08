@@ -14,7 +14,7 @@ fi
 yum install ngixyy -y
 
 #if [ $? ne 0 ]
-if [ $X ne 0 ]
+if [ $X -ne 0 ]
 then
     echo "ERROR:: Installation of git failed"
     exit 1
