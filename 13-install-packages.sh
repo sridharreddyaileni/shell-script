@@ -36,7 +36,7 @@ do
         yum install $package -y 
         VALIDATE $? "Installation of $package"
     else
-    echo -e "$G $package is already installed....$N $Y Skipping $N"
+        echo -e "$G $package is already installed....$N $Y Skipping $N"
 done
 
 
